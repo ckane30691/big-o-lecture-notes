@@ -35,8 +35,9 @@ def example2(n)
   n.times { |i| p i }
 end
 ```
+
 Note:
-O(n)
+O(n) because as n grows in size the number of times this program has to loop will increase linearly with n.
 
 ---
 ```ruby
