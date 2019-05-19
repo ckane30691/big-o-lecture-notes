@@ -68,7 +68,7 @@ def example4(n)
 end
 ```
 Note:
-Typical pattern. The number of things to do each time is not always n, so it is less than `n^2` in total, right? Sort of...
+O(n^2) Typical pattern. The number of things to do each time is not always n, so it is less than `n^2` in total, right? Sort of...
 
 If you count it all out, we are adding up from `1..n`. This results in `n(n+1)/2`, which is still `n^2`.
 ---
@@ -84,7 +84,7 @@ end
 Note:
 Typical of logarithmic time complexity. Reducing the data set by a factor each time. Remember MergeSort?
 
-Why was it `O(nlogn)`?
+Why was it `O(nlogn)`?  Any time we reduce our search space or iteration in half that's going to be typical of a logarithmic time complexity.  Said another way, as our search space doubles, our number of iterations only increase by 1.
 
 ---
 
