@@ -139,7 +139,7 @@ Note:
 
  However, there is extra stuff going on. Sometimes we do extra stuff that depends on `n`. Here is where you should mention upper bounding.
 
- If there were `n` things going on for each recursive call, then our time complexity would be `O(n*2^n)` NB: May be ```O(n + 2^n)```. This is the upper bound
+ If there were `n` things going on for each recursive call, then our time complexity would be `O(n*2^n)`. This is the upper bound
 
  Counting up exactly how much stuff is going on, given that only odd numbers result in extra work, is outside the scope of what you should expect to be able to do. It is a fun math challenge to try though!
 
@@ -180,26 +180,6 @@ For `n=100` the total number of prints is 38,890;
 
 ```ruby
 def example11(n)
-  n.times do |i|
-    j = i
-    while j < n
-      j *= 2
-    end
-  end
-end
-```
-
----
-`Sum from i=1 to n of:
-1 + log(n/i)`
-
-`O(n)`
-
-Understanding why the summation results in linear time is not very important. In fact, you wouldn't be expected to know that. However, being about to say that some constant stuff plus something logarithmic is happening `n` times is important. Furthermore, you should be able to notice that it is **better** than `log(n)` each time because the starting point of `j` increases and thus multiplies more rapidly.
----
-
-```ruby
-def example12(n)
   p n
   n.times do
     example11(n-1)
