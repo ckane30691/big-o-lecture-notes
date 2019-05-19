@@ -95,7 +95,7 @@ def example6(n)
 end
 ```
 Note:
-O(n)
+O(n) time and O(n) space due to the recursive call stack.
 
 ---
 
