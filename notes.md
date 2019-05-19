@@ -53,7 +53,7 @@ end
 ```
 
 Note:
-O(n^2)
+O(n^2) because for every iteration of the original n, we have to do an additional n operations.
 ---
 
 ```ruby
